@@ -6,12 +6,11 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 19:37:41 by tsehr             #+#    #+#             */
-/*   Updated: 2019/09/10 11:17:20 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/09/10 12:12:11 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <stdio.h>
 #include "get_next_line.h"
 
 int		get_next_line(const int fd, char **line)
