@@ -6,13 +6,14 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/18 17:58:22 by vtouffet          #+#    #+#             */
-/*   Updated: 2019/07/05 23:55:54 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/09/10 09:41:44 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <string.h>
+# include "todd.h"
 
 typedef struct	s_list
 {

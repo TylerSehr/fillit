@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/20 14:39:51 by tsehr             #+#    #+#             */
-/*   Updated: 2019/09/09 03:50:26 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/09/10 09:50:15 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,11 @@ t_bool	build_solution(int output_pieces[26])
 
 t_bool	calculate_solution(int output_pieces[26])
 {
-	int		*original;
 	t_board	*board;
 	int		board_offset;
 
-	original = (int *)malloc(sizeof(int) * 27);
-	original = duplicate_array(output_pieces, original);
 	board_offset = 0;
-	board = (t_board *)malloc(sizeof(t_board));
+	board = (t_board *)todd(sizeof(t_board), 1);
 	board->x = 0;
 	board->y = 0;
 	board->value = '.';

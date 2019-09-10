@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/15 21:38:16 by tsehr             #+#    #+#             */
-/*   Updated: 2019/09/09 03:08:21 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/09/10 09:57:11 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int			fillit(char *input_file)
 	int		i;
 
 	i = 0;
-	output_pieces = (int *)malloc(sizeof(int) * 26);
+	output_pieces = (int *)todd(sizeof(int), 26);
 	while (i < 26)
 	{
 		output_pieces[i] = -1;
@@ -53,7 +53,7 @@ char		**load_file(char *input_file)
 	int		i;
 
 	i = 0;
-	loaded_file = (char **)malloc(sizeof(char *) * 130);
+	loaded_file = (char **)todd(sizeof(char *), 130);
 	fd = open(input_file, O_RDONLY);
 	while (get_next_line(fd, &line))
 	{
@@ -65,7 +65,7 @@ char		**load_file(char *input_file)
 	loaded_file[i] = ft_strnew(2);
 	loaded_file[i][0] = '\n';
 	i++;
-	loaded_file[i] = (char *)malloc(sizeof(char));
+	loaded_file[i] = (char *)todd(sizeof(char), 1);
 	loaded_file[i][0] = '\0';
 	return (loaded_file);
 }

@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 15:58:44 by tsehr             #+#    #+#             */
-/*   Updated: 2019/09/09 03:50:23 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/09/10 09:50:10 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void	build_board(int pieces[26], t_board *board, int offset)
 			x = 0;
 		}
 		start = board->start;
-		board->next = (t_board *)malloc(sizeof(t_board));
+		board->next = (t_board *)todd(sizeof(t_board), 1);
 		board = board->next;
 		initialize_board(board, x, y);
 		board->start = start;
