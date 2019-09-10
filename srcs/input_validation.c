@@ -6,11 +6,10 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/15 22:10:04 by tsehr             #+#    #+#             */
-/*   Updated: 2019/09/09 03:57:39 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/09/10 11:19:07 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <stdlib.h>
 #include "fillit.h"
 

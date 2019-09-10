@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 19:37:41 by tsehr             #+#    #+#             */
-/*   Updated: 2019/07/03 22:51:50 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/09/10 11:17:20 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,6 @@ void	clean_pool(char *pool[255], int fd, int line_end)
 	temp[pool_start] = '\0';
 	ft_bzero(pool[fd], ft_strlen(pool[fd]));
 	pool[fd] = ft_strcpy(pool[fd], temp);
-	free(temp);
 }
 
 int		save_line_and_return_index(char *pool[255], int fd, char **line)

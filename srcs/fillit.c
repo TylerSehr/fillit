@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/15 21:38:16 by tsehr             #+#    #+#             */
-/*   Updated: 2019/09/10 09:57:11 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/09/10 10:51:32 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int			fillit(char *input_file)
 	}
 	REQUIRE((loaded_file = load_file(input_file)), 1);
 	REQUIRE(validate_input(loaded_file, output_pieces), 2);
-	free(loaded_file);
+	// free(loaded_file);
 	REQUIRE((output_pieces[0] != -1), 3);
 	REQUIRE(build_solution(output_pieces), 4);
 	return (0);

@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/03 16:01:57 by tsehr             #+#    #+#             */
-/*   Updated: 2019/07/03 16:42:11 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/09/10 10:49:49 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,5 @@ char	*ft_extend_string(char *src, size_t size)
 		i++;
 	}
 	temp[i] = '\0';
-	free(src);
 	return (temp);
 }
