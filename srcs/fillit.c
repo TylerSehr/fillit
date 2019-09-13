@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/15 21:38:16 by tsehr             #+#    #+#             */
-/*   Updated: 2019/09/10 12:06:31 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/09/13 12:31:25 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,8 @@ char		**load_file(char *input_file)
 	i = 0;
 	loaded_file = (char **)todd(sizeof(char *), 130);
 	fd = open(input_file, O_RDONLY);
+	if (fd == -1)
+		return (NULL);
 	while (get_next_line(fd, &line))
 	{
 		if (ft_strlen(line) == 0)
