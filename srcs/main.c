@@ -6,13 +6,12 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/15 21:27:09 by tsehr             #+#    #+#             */
-/*   Updated: 2019/09/11 12:36:35 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/09/13 12:53:59 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
 #include "../libft/libft.h"
-#include <stdlib.h>
 
 int	main(int argc, char **argv)
 {

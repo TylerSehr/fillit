@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/09 19:04:31 by tsehr             #+#    #+#             */
-/*   Updated: 2019/09/10 16:01:53 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/09/13 12:47:39 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ void	*todd(size_t size, int multiplier)
 	void *maximum_todd;
 
 	maximum_todd = malloc(size * multiplier + 1);
-	increase_todd(maximum_todd);
+	if (g_od_todd != NULL)
+		increase_todd(maximum_todd);
 	return (maximum_todd);
 }
 
@@ -60,4 +61,10 @@ void	and_so_ends_the_reign_of_todd(void)
 			free(temporary_todd);
 		}
 	}
+}
+
+void	todd_kosher_free(void *todd_target)
+{
+	free(todd_target);
+	todd_target = NULL;
 }

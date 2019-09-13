@@ -6,7 +6,7 @@
 /*   By: tsehr <tsehr@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/09 19:04:34 by tsehr             #+#    #+#             */
-/*   Updated: 2019/09/10 10:19:44 by tsehr            ###   ########.fr       */
+/*   Updated: 2019/09/13 12:50:22 by tsehr            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,6 @@ void				*todd(size_t size, int multiplier);
 void				increase_todd(void *todds_mobile_data);
 void				build_a_todd();
 void				and_so_ends_the_reign_of_todd();
+void	todd_kosher_free(void *todd_target);
 
 #endif
